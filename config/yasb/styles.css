@@ -1,0 +1,57 @@
+/* TVA '90s workstation panel: beveled, flat-colored, monospace caps, amber phosphor */
+* {
+    font-family: "Monocraft", "Consolas", monospace;
+    font-size: 12px;
+    color: #CFC6B4;
+    border-radius: 0;
+}
+
+.yasb-bar {
+    background-color: #1A1713;
+    border-bottom: 3px solid #D98324;
+}
+
+.widget { margin: 2px 1px; padding: 0; background-color: transparent; border: none; }
+
+/* raised 90s bevel on every widget */
+.widget .widget-container {
+    background-color: #221E18;
+    padding: 0 10px;
+    margin: 0;
+    border-top: 2px solid #4A4133;
+    border-left: 2px solid #4A4133;
+    border-bottom: 2px solid #0B0A08;
+    border-right: 2px solid #0B0A08;
+}
+.widget .label { color: #CFC6B4; background-color: transparent; }
+
+/* workspaces: bevelled keys, active = pressed (sunken) amber key */
+.komorebi-workspaces { background-color: transparent; border: none; padding: 0; margin: 2px 1px; }
+.komorebi-workspaces .widget-container { padding: 0; margin: 0; background-color: transparent; border: none; }
+.komorebi-workspaces .ws-btn {
+    padding: 0 10px; margin: 0 1px;
+    background-color: #221E18;
+    border-top: 2px solid #4A4133; border-left: 2px solid #4A4133;
+    border-bottom: 2px solid #0B0A08; border-right: 2px solid #0B0A08;
+}
+.komorebi-workspaces .ws-btn .label { color: #6A604F; }
+.komorebi-workspaces .ws-btn.populated .label { color: #CFC6B4; }
+.komorebi-workspaces .ws-btn.active {
+    background-color: #D98324;
+    border-top: 2px solid #0B0A08; border-left: 2px solid #0B0A08;
+    border-bottom: 2px solid #F0A85A; border-right: 2px solid #F0A85A;
+}
+.komorebi-workspaces .ws-btn.active .label { color: #12100D; font-weight: bold; }
+
+.komorebi-active-layout-widget .label { color: #C9A227; }
+.active-window-widget .widget-container { background-color: #14120F; border-top: 2px solid #0B0A08; border-left: 2px solid #0B0A08; border-bottom: 2px solid #4A4133; border-right: 2px solid #4A4133; }
+.active-window-widget .label { color: #8A7F6D; }
+
+.clock-widget .label { color: #D98324; font-weight: bold; }
+.traffic-widget .label { color: #5E9490; }
+.cpu-widget .label { color: #8FAA78; }
+.memory-widget .label { color: #C9A227; }
+.volume-widget .label { color: #CFC6B4; }
+.battery-widget .label { color: #8FAA78; }
+.battery-widget .label.status-low,
+.battery-widget .label.status-critical { color: #B5472B; }

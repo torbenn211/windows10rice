@@ -1,0 +1,52 @@
+.shell cmd
+
+# TVA rice, Alt fallback (vim keys). Use if the Win-key bindings conflict with Windows.
+alt + return           : __TERM__
+alt + shift + return   : wt powershell.exe
+alt + shift + f        : explorer.exe
+alt + shift + b        : start "" msedge
+alt + shift + n        : __NVIM__
+alt + shift + t        : __BTOP__
+alt + k                : notepad "%USERPROFILE%\.config\whkdrc"
+
+alt + w                : komorebic close
+alt + f                : komorebic toggle-monocle
+alt + t                : komorebic toggle-float
+alt + j                : komorebic cycle-layout next
+alt + p                : komorebic toggle-pause
+alt + shift + r        : komorebic reload-configuration
+
+alt + h : komorebic focus left
+alt + l : komorebic focus right
+alt + shift + k : komorebic focus up
+alt + shift + j : komorebic focus down
+alt + ctrl + h : komorebic move left
+alt + ctrl + l : komorebic move right
+alt + ctrl + k : komorebic move up
+alt + ctrl + j : komorebic move down
+
+alt + oem_minus         : komorebic resize-axis horizontal decrease
+alt + oem_plus          : komorebic resize-axis horizontal increase
+alt + shift + oem_minus : komorebic resize-axis vertical decrease
+alt + shift + oem_plus  : komorebic resize-axis vertical increase
+
+alt + 1 : komorebic focus-workspace 0
+alt + 2 : komorebic focus-workspace 1
+alt + 3 : komorebic focus-workspace 2
+alt + 4 : komorebic focus-workspace 3
+alt + 5 : komorebic focus-workspace 4
+alt + 6 : komorebic focus-workspace 5
+alt + 7 : komorebic focus-workspace 6
+alt + 8 : komorebic focus-workspace 7
+alt + 9 : komorebic focus-workspace 8
+alt + ctrl + 1 : komorebic move-to-workspace 0
+alt + ctrl + 2 : komorebic move-to-workspace 1
+alt + ctrl + 3 : komorebic move-to-workspace 2
+alt + ctrl + 4 : komorebic move-to-workspace 3
+alt + ctrl + 5 : komorebic move-to-workspace 4
+alt + ctrl + 6 : komorebic move-to-workspace 5
+alt + ctrl + 7 : komorebic move-to-workspace 6
+alt + ctrl + 8 : komorebic move-to-workspace 7
+alt + ctrl + 9 : komorebic move-to-workspace 8
+
+alt + ctrl + shift + q : komorebic stop --whkd

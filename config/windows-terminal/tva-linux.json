@@ -1,0 +1,19 @@
+{
+  "profiles": [
+    {
+      "name": "TVA Linux",
+      "commandline": "wsl.exe -d __DISTRO__ --cd ~",
+      "colorScheme": "TVA",
+      "font": {
+        "face": "Monocraft",
+        "size": 12
+      },
+      "cursorShape": "vintage",
+      "antialiasingMode": "aliased",
+      "padding": "8",
+      "opacity": 100,
+      "useAcrylic": false,
+      "experimental.retroTerminalEffect": true
+    }
+  ]
+}

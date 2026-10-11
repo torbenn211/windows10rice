@@ -1,0 +1,85 @@
+{
+  "profiles": [
+    {
+      "updates": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+      "colorScheme": "TVA",
+      "font": {
+        "face": "Monocraft",
+        "size": 12
+      },
+      "padding": "8",
+      "cursorShape": "vintage",
+      "antialiasingMode": "aliased",
+      "opacity": 100,
+      "useAcrylic": false,
+      "experimental.retroTerminalEffect": true
+    },
+    {
+      "updates": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+      "colorScheme": "TVA",
+      "font": {
+        "face": "Monocraft",
+        "size": 12
+      },
+      "padding": "8",
+      "cursorShape": "vintage",
+      "antialiasingMode": "aliased",
+      "opacity": 100,
+      "useAcrylic": false,
+      "experimental.retroTerminalEffect": true
+    },
+    {
+      "updates": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+      "colorScheme": "TVA",
+      "font": {
+        "face": "Monocraft",
+        "size": 12
+      },
+      "padding": "8",
+      "cursorShape": "vintage",
+      "antialiasingMode": "aliased",
+      "opacity": 100,
+      "useAcrylic": false,
+      "experimental.retroTerminalEffect": true
+    },
+    {
+      "updates": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+      "colorScheme": "TVA",
+      "font": {
+        "face": "Monocraft",
+        "size": 12
+      },
+      "cursorShape": "vintage",
+      "antialiasingMode": "aliased",
+      "padding": "8",
+      "opacity": 100,
+      "useAcrylic": false,
+      "experimental.retroTerminalEffect": true
+    }
+  ],
+  "schemes": [
+    {
+      "name": "TVA",
+      "background": "#12100D",
+      "foreground": "#CFC6B4",
+      "cursorColor": "#D98324",
+      "selectionBackground": "#3A2A18",
+      "black": "#1C1712",
+      "red": "#B5472B",
+      "green": "#6E8B5B",
+      "yellow": "#C9A227",
+      "blue": "#4F7A7A",
+      "purple": "#8A5F6B",
+      "cyan": "#5E9490",
+      "white": "#E3D5B8",
+      "brightBlack": "#5A4A38",
+      "brightRed": "#E8731A",
+      "brightGreen": "#8FAA78",
+      "brightYellow": "#E0B93A",
+      "brightBlue": "#6F9C9C",
+      "brightPurple": "#A87A87",
+      "brightCyan": "#7FB5B0",
+      "brightWhite": "#F2E8D0"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+.shell cmd
+
+# TVA rice, Omarchy-style keys. SUPER = the Windows key.
+# whkd >= 0.2.4 can override most Win-key combos. Win+L (lock) is left alone on purpose.
+# If Win bindings misbehave, reinstall with: install.ps1 -AltKeys   (uses config\whkdrc.alt)
+# Tokens like __TERM__ are filled in by the installer (WSL terminal if WSL works).
+
+# ---- apps (Omarchy: SUPER+RETURN, SUPER+SHIFT+letter) ----
+win + return           : __TERM__
+win + shift + return   : wt powershell.exe
+win + shift + f        : explorer.exe
+win + shift + b        : start "" msedge
+win + shift + n        : __NVIM__
+win + shift + t        : __BTOP__
+win + k                : notepad "%USERPROFILE%\.config\whkdrc"
+
+# ---- windows ----
+win + w                : komorebic close
+win + f                : komorebic toggle-monocle
+win + t                : komorebic toggle-float
+win + j                : komorebic cycle-layout next
+win + p                : komorebic toggle-pause
+win + shift + r        : komorebic reload-configuration
+
+# ---- focus / move (arrows, like Omarchy) ----
+win + left             : komorebic focus left
+win + right            : komorebic focus right
+win + up               : komorebic focus up
+win + down             : komorebic focus down
+win + shift + left     : komorebic move left
+win + shift + right    : komorebic move right
+win + shift + up       : komorebic move up
+win + shift + down     : komorebic move down
+
+# ---- resize ----
+win + oem_minus         : komorebic resize-axis horizontal decrease
+win + oem_plus          : komorebic resize-axis horizontal increase
+win + shift + oem_minus : komorebic resize-axis vertical decrease
+win + shift + oem_plus  : komorebic resize-axis vertical increase
+
+# ---- workspaces (komorebic is 0-indexed) ----
+win + tab              : komorebic cycle-workspace next
+win + shift + tab      : komorebic cycle-workspace previous
+win + 1 : komorebic focus-workspace 0
+win + 2 : komorebic focus-workspace 1
+win + 3 : komorebic focus-workspace 2
+win + 4 : komorebic focus-workspace 3
+win + 5 : komorebic focus-workspace 4
+win + 6 : komorebic focus-workspace 5
+win + 7 : komorebic focus-workspace 6
+win + 8 : komorebic focus-workspace 7
+win + 9 : komorebic focus-workspace 8
+win + shift + 1 : komorebic move-to-workspace 0
+win + shift + 2 : komorebic move-to-workspace 1
+win + shift + 3 : komorebic move-to-workspace 2
+win + shift + 4 : komorebic move-to-workspace 3
+win + shift + 5 : komorebic move-to-workspace 4
+win + shift + 6 : komorebic move-to-workspace 5
+win + shift + 7 : komorebic move-to-workspace 6
+win + shift + 8 : komorebic move-to-workspace 7
+win + shift + 9 : komorebic move-to-workspace 8
+
+# ---- session ----
+win + ctrl + l          : rundll32.exe user32.dll,LockWorkStation
+win + ctrl + shift + q  : komorebic stop --whkd
